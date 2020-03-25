@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: black;
+		}
+
+		li {
+		float: left;
+		}
+
+		li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		}
+
+		li a:hover {
+		background-color: blue;
+		}
+		
+		ul {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		}
+		
+		div {
+			background: white;
+		}
+		</style>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		* {box-sizing: border-box;}
+		body {font-family: Verdana, sans-serif;}
+		.mySlides {display: none;}
+		img {vertical-align: middle;}
+
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 500px;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Caption text */
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+
+		/* Number text (1/4 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .text {font-size: 11px}
+		}
+		</style>
+	</head>
+	
+	<style>
+		body {
+		background-image: url('https://i7.pngguru.com/preview/655/204/894/consultant-management-consulting-service-business-information-technology-consulting-reunion.jpg');
+		background-repeat: no-repeat;  
+		background-size: cover;
+		}
+	</style>
+	
+	<body>
+		<nav>
+			<ul class="nav">
+			<li><a class="active" href="Home.html">Home</a></li>
+			<li><a href="CV.html">CV</a></li>
+			<li><a href="Interests.html">Interests</a></li>
+			<li><a href="Consultingservices.html">Consulting Services</a></li>
+			<li><a href="Ebusiness.html">Ebusiness</a></li>
+			</ul>
+		</nav>
+	<br><br>
+
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 4</div>
+		  <img src="https://i0.wp.com/rebelogcoaching.com/wp-content/uploads/2017/06/a-view-of-gaelic-football-752x501.jpg" style="width:100%">
+		  <div class="text">Gaelic Football</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 4</div>
+		  <img src="https://www.clare.fm/wp-content/uploads/sites/17/0813-hurling.jpg" style="width:100%">
+		  <div class="text">Camogie</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 4</div>
+		  <img src="https://www.visitliverpool.com/imageresizer/?image=%2Fdmsimgs%2FRadioCityTour_1269755688.jpg&action=ProductDetail" style="width:100%">
+		  <div class="text">Liverpool</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="https://cdn.advanceagent.co.uk/5b1d/803b917b/cabo-roig.jpg" style="width:100%">
+		  <div class="text">Spain</div>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+		
+		</div>
+		<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+		</script>
+
+	<div id="header"></div>
+	<div class="center"></div>
+	<h2><b><center>Interests</center></b></h2>
+	<div>
+		<h3>Sports</h3>
+		<p>
+		Although I am no longer able to play sports I still have a big interest in them. Up until I<br>
+		was 16 years old I was a heavily involved in Gaelic Football and Camogie. I played Gaelic with both my<br>
+		school and my local club. Most of the time I played full-forward but now and again i was put in midfield.<br>
+		For camogie I played as a centre-back. Unfortunately during a Gaelic match I tore my Acl which put an end<br>
+		to both sports. Now I am a member of NRG Fitness Gym in Little Island and train there regularly. The gym<br>
+		is a huge part of my life now, during the Leaving Cert it gave me a well needed break from studying<br>
+		and stressing over exams, I found it the best way to get a break from the books. Now I go to the <br>
+		gym after college up to 5 times a week. I find sports and exercise very important, not only for health<br>
+		reasons but also for mental reasons. Exercise is the best way to relieve stress and relax in my opinion.<br>
+		<br>
+	</div>
+	<div>
+		<h3>Travel</h3>
+		<p>
+		Travelling has been a big interest of mine ever since I was young. Travelling has given me the opportunity to<br>
+		see and experience a variety of different cultures. When I was two years old my parents took me to Alicante in Spain<br>
+		and I have been going there ever since. My family owns a villa in Alicante which gives me the opportunity to go there<br>
+		when I please. This has also given me the chance to learn Spanish and I now consider myself to have a very good<br>
+		understanding of the language. Another place I had the opportunity to visit was Liverpool. In January, myself and a<br>
+		friend took a trip there. We got the chance to explore Anfield Stadium, see the Radio City Tower and of course <br>
+		experience the night-life. In the near future I hope to visit America, either on a J1 or on placement. In my opinion I think<br>
+		everyone who has the opportuinty to travel should act on it, especially at my age. Young people should travel and explore the<br>
+		world before settling down and working full-time. I myself am hoping to go travelling this summer with my friends.<br>
+	</div>
+	</body>
+</html>
